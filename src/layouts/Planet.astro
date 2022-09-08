@@ -1,0 +1,15 @@
+---
+import BaseLayout from './BaseLayout.astro'
+const {frontmatter} = Astro.props;
+---
+<BaseLayout title="frontmatter.title">
+  <div class="flex w-full justify-center h-screen items-center">
+    <div class="prose">
+      <a href="/">←Go back</a>
+      <h1>{frontmatter.title}</h1>
+      <img src={frontmatter.image} class="w-96" />
+    <slot />
+  </div>
+
+  </div>
+</BaseLayout>
