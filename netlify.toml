@@ -1,7 +1,7 @@
 [build]
-  functions = './functions'
+  functions = './src/functions'
 [functions]
-  directory = './functions'
+  directory = './src/functions'
   node_bundler = 'esbuild'
 [[redirects]]
   from = "/api/*"
